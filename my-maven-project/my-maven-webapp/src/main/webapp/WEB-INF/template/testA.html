@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>这是TestA</title>
+[#include "/common/commonCss.html"]
+</head>
+<body>
+${testOrder2.orderId}
+::::
+${testOrder1.order_id}
+<a id="test" type="button" class="btn btn-primary" href="javascript:void(0);">测试</a>
+${test}
+[#include "/common/commonJs.html"]
+<script type="text/javascript">
+$(function(){
+	$("#test").click(function(){
+		alert(321);
+	});
+});
+</script>
+</body>
+</html>
